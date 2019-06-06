@@ -12,12 +12,19 @@ body {
 
 /* general */
 
+/* .container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+} */
+
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
-}
+} 
 
 h1,
 h2,
@@ -64,7 +71,8 @@ h3 {
 }
 
 #logo {
-  float: left;
+  /* float: left; -not needed since grid is used*/
+  float: left; 
   width: 250px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -77,7 +85,14 @@ h3 {
   background: #4aaaa5;
 }
 
+/* tring to use "CSS Combinators" to target the name in header but
+still doesn't work */
+.row .col-sm-12 {
+  width: 100%;
+}
+
 nav {
+  /* float: right; -not needed since grid is used*/
   float: right;
   margin-top: 25px;
 }
